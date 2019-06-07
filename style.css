@@ -129,6 +129,7 @@ aside .skills i {
 aside .concat dt {
   width: 20%;
   padding-left: 20px;
+  margin-bottom: 4px;
 }
 aside .concat dd {
   width: 80%;
