@@ -157,7 +157,7 @@ aside .zhihu:hover {
 aside .github {
   background: #24292e;
   color: #fff;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 
 main .main-layout {
@@ -182,4 +182,7 @@ main section ul {
 }
 main section:last-child {
   border-bottom: none;
+}
+main .my-skills dt:not(:first-child) {
+  margin: 14px 0;
 }
