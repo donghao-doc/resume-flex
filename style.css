@@ -26,7 +26,7 @@ body {
 header {
   width: 100%;
   background: #3c3c3c;
-  padding: 60px 0 10px 0;
+  padding: 50px 0 20px 0;
 }
 aside {
   width: 240px;
@@ -40,12 +40,9 @@ main {
 @media (max-width: 768px) {
  aside {
     width: 100%;
-    height: 100px;
-    background: green;
   }
   main {
-    background: orange;
-    height: calc(100vh - 237px);
+    /* height: calc(100vh - 237px); */
   } 
 }
 
@@ -65,9 +62,24 @@ header>p {
   font-size: 14px;
   margin-bottom: 4px;
 }
+@media (max-width: 768px) {
+  header>h1 {
+    text-align: right;
+    margin-right: 40px;
+  }
+  header>p {
+    text-align: right;
+    margin-right: 40px;
+  }
+}
 
 aside {
   border-right: 1px solid #ccc;
+}
+@media (max-width: 768px) {
+  aside {
+    border-right: none;
+  }
 }
 aside .aside-layout {
   width: 90%;
@@ -80,8 +92,16 @@ aside .avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: skyblue;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  aside .avatar {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 0;
+  }
 }
 section {
   border-bottom: 1px solid #ccc;
@@ -108,6 +128,34 @@ section dd {
   width: 50%;
   padding-left: 10px;
 }
+@media (max-width: 768px) {
+  section dt {
+    width: 30%;
+    padding-left: 20px;
+  }
+  section dd {
+    width: 70%;
+    padding-left: 10px;
+  } 
+}
+aside .information dt {
+  height: 22px;
+  line-height: 22px;
+}
+aside .information i {
+  font-style: normal;
+  display: inline-block;
+  width: 4em;  
+  text-align: justify;
+  height: 21px;
+  line-height: 20px;
+  overflow: hidden;
+}
+aside .information i::after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
 aside .skills dl {
   justify-content: space-between;
   align-items: center;
@@ -120,6 +168,18 @@ aside .skills dd {
   background: #ccc;
   width: 60%;
   padding: 0;
+}
+@media (max-width: 768px) {
+  aside .skills dt {
+    width: 30%;
+    padding-left: 20px;
+  }
+  aside .skills dd {
+    width: 70%;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 aside .skills i {
   display: block;
@@ -134,8 +194,16 @@ aside .concat dt {
 aside .concat dd {
   width: 80%;
 }
-aside .blog {
-  /* padding: 0; */
+@media (max-width: 768px) {
+  aside .concat dt {
+    width: 20%;
+    padding-left: 20px;
+    margin-bottom: 4px;
+  }
+  aside .concat dd {
+    width: 80%;
+    padding-left: 0;
+  }
 }
 aside .blog a {
   display: block;
@@ -165,6 +233,11 @@ main .main-layout {
   margin: 0 auto;
   font: 14px/1.5 Arial;
 }
+@media (max-width: 768px) {
+  main .main-layout {
+    width: 90%;
+  }
+}
 main section dl {
   display: block;
 }
@@ -173,6 +246,7 @@ main section dt {
   font-weight: 700;
   color: #000;
   margin-bottom: 14px;
+  width: 100%;
 }
 main section dd {
   width: 100%;
@@ -186,3 +260,8 @@ main section:last-child {
 main .my-skills dt:not(:first-child) {
   margin: 14px 0;
 }
+.main-layout section:nth-child(3) dd,
+.main-layout section:nth-child(4) p {
+  padding-left: 20px;
+}
+
