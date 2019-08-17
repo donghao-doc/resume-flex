@@ -106,8 +106,8 @@
               <ul>
                 <li>变量提升、作用域、立即执行函数（IIFE）、对象拷贝、闭包等</li>
                 <li>DOM增删改查、事件模型（冒泡 / 捕获 / 取消默认 / 事件代理 / 事件循环 / 任务队列）等</li>
-                <li>BOM、、Ajax、跨域、Promise、箭头函数等</li>
-                <li>原型、原型链、继承、this、发布订阅模式</li>
+                <li>BOM、Ajax、跨域、JSONP、CORS、Promise</li>
+                <li>原型、原型链、继承、this、ES6</li>
               </ul>
             </dd>
             <dt>jQuery</dt>
@@ -120,7 +120,7 @@
             <dt>HTTP</dt>
             <dd>
               <ul>
-                <li>HTTP头、状态码、HTTP缓存</li>
+                <li>HTTP头、状态码</li>
               </ul>
             </dd>
             <dt>Vue</dt>
@@ -148,56 +148,57 @@
         <section>
           <h2>项目经历</h2>
           <dl>
-            <dt>vue技术栈实现cnode社区</dt>
+            <dt>vue技术栈实现CNode社区</dt>
             <dd>
               <ul>
                 <li>
-                  项目介绍： 为什么做这个项目(解决了什么问题)，提供了哪些功能。我在项目中承担的角色，用到了哪些技术，做了过程中遇到了什么问题，你是如何解决的，在代码复用性、体验、性能、ui上做了哪些优化
+                  项目介绍：该项目使用 Vue 还原 CNode 官方社区，项目调用官方社区提供的 API。使用 Vue-cli 创建项目模板，使用 Axios 获取数据，使用 Vue Router 进行前端路由的切换及传参，使用 Watch 监听路由的变化，Webpack 打包。
                 </li>
                 <li>
-                  技术栈：vue、vue-router、vuex、element-ui、webpack、es6
+                  技术栈：Vue-cli / Vue Router / Axios / ES6 / Npm / SCSS
                 </li>
                 <li>
-                  项目源码:github.com/jirengu
+                  项目源码: <a href="https://github.com/dongdong12138/cnode">点击查看</a>
                 </li>
                 <li>
-                  预览项目: <a href="#">点击查看</a>
+                  预览项目: <a href="https://dongdong12138.github.io/cnode/dist/index.html">点击查看</a>
                 </li>
               </ul>
             </dd>
             
-            <dt style="margin-top: 14px;">vue技术栈实现在线简历创作平台</dt>
+            <dt style="margin-top: 14px;">自制 UI 框架</dt>
             <dd>
               <ul>
                 <li>
-                  项目介绍： 为什么做这个项目(解决了什么问题)，提供了哪些功能。我在项目中承担的角色，用到了哪些技术，做了过程中遇到了什么问题，你是如何解决的，在代码复用性、体验、性能、ui上做了哪些优化
+                  项目介绍： 该项目是一个简易的 UI 组件库，主要参照了 Framework7、Ant Design、Element UI 等 UI 库。该框架提供了 Button、Tabs、Grid、Input、Layout、Popover、Toast 等组件。
+                            主要使用了 vue、parcel、npm、vuepress、sass 等技术，使用 karma、Mocha、Sinon 等做了单元测试，并用 TravisCI 实现持续集成。最终使用 Vue Press 制作官方文档。
+                            完成该项目，使我对前端工程化流程以及单元测试的重要性有了进一步的理解。
                 </li>
                 <li>
-                  技术栈：vue、vue-router、vuex、element-ui、webpack、es6
+                  技术栈：Vue / VuePress / ES6 / Parcel / Npm / Mocha / SCSS / TravisCI
                 </li>
                 <li>
-                  项目源码:github.com/jirengu
+                  项目源码: <a href="https://github.com/dongdong12138/gulu-demo">点击查看</a>
                 </li>
                 <li>
-                  预览项目: <a href="#">点击查看</a>
+                  框架文档: <a href="https://dongdong12138.github.io/gulu-demo/">轱辘 UI 文档</a>
                 </li>
               </ul>
             </dd>
             
-            <dt style="margin-top: 14px;">小程序实现翻译工具</dt>
+            <dt style="margin-top: 14px;">可爱皮卡丘</dt>
             <dd>
               <ul>
                 <li>
-                  项目介绍： 为什么做这个项目(解决了什么问题)，提供了哪些功能。我在项目中承担的角色，用到了哪些技术，做了过程中遇到了什么问题，你是如何解决的，在代码复用性、体验、性能、ui上做了哪些优化
+                  项目介绍：该项目是使用 原生JS + jQuery 开发的，动态显示 CSS 画一个皮卡丘过程的小作品。
+                           该作品主要思路是通过间隔计时器遍历预先设置在 preview 标签内代码，将其一个个显示在页面上，并在 style 标签上作同样处理，以使代码 CSS 生效。
+                           友情提示：在移动端观看效果更佳。
                 </li>
                 <li>
-                  技术栈：vue、vue-router、vuex、element-ui、webpack、es6
+                  项目源码: <a href="https://github.com/dongdong12138/Pikachu">点击查看</a>
                 </li>
                 <li>
-                  项目源码:github.com/jirengu
-                </li>
-                <li>
-                  预览项目: <a href="#">点击查看</a>
+                  预览项目: <a href="https://dongdong12138.github.io/Pikachu/index.html">点击查看</a>
                 </li>
               </ul>
             </dd>
@@ -210,9 +211,6 @@
                 </li>
                 <li>
                   <a href="https://dongdong12138.github.io/keyboard-nav/index.html">键盘导航</a>（PC端）
-                </li>
-                <li>
-                  <a href="https://dongdong12138.github.io/Pikachu/index.html">皮卡丘</a>（移动端）
                 </li>
                 <li>
                   <a href="https://github.com/dongdong12138/chrome-translator">董董翻译</a>（Chrome 划词翻译插件）
