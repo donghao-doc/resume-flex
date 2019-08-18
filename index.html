@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <base target="_blank">
-  <title>我的简历</title>
+  <title>董浩-面试前端开发-2019</title>
   <link rel="stylesheet" href="./style.css">
   <script src="//at.alicdn.com/t/font_1232437_wmnqd48qo3.js"></script>
 </head>
@@ -18,7 +18,7 @@
     
     <aside>
       <div class="aside-layout">
-        <img class="avatar" src="./avatar.jpg" alt="头像">
+        <img class="avatar" src="./images/avatar.jpg" alt="头像">
         <section class="information">
           <h2>基础信息</h2>
           <dl>
@@ -82,6 +82,7 @@
         <section class="blog">
           <a class="zhihu" href="https://www.zhihu.com/people/dongdong12138/activities">我的知乎</a>
           <a class="github" href="https://github.com/dongdong12138">我的 GitHub</a>
+          <a class="online" href="https://github.com/dongdong12138/resume-flex">查看在线简历</a>
         </section>
       </div>
     </aside>
@@ -97,7 +98,7 @@
               <ul>
                 <li>HTML语义化、Form表单、选择器、常见样式、浏览器调试等</li>
                 <li>盒模型、浮动、定位、BFC、居中、常见布局、svg图标等</li>
-                <li>Flex、移动端适配</li>
+                <li class="print-special">Flex、移动端适配、Canvas</li>
                 <li>transition、transform、animation 等 CSS3 属性</li>
               </ul>
             </dd>
@@ -139,7 +140,8 @@
                 <li>BootStrap</li>
                 <li>WebPack</li>
                 <li>Sass</li>
-                <li>Web安全</li>
+                <li>Web性能优化</li>
+                <li>熟练使用 VScode、Webstorm 等开发工具</li>
               </ul>
             </dd>
           </dl>
@@ -151,8 +153,15 @@
             <dt>vue技术栈实现CNode社区</dt>
             <dd>
               <ul>
+                <li style="list-style: none;">
+                    <a href="https://dongdong12138.github.io/cnode/dist/index.html">
+                        <img src="./images/cnode.png" width="580" alt="CNode社区截图预览">
+                    </a>
+                </li>
                 <li>
-                  项目介绍：该项目使用 Vue 还原 CNode 官方社区，项目调用官方社区提供的 API。使用 Vue-cli 创建项目模板，使用 Axios 获取数据，使用 Vue Router 进行前端路由的切换及传参，使用 Watch 监听路由的变化，Webpack 打包。
+                  项目介绍：该项目使用 Vue 还原 CNode 官方社区，项目调用官方社区提供的 API。
+                           使用 <span class="highlight">Vue-cli</span> 创建项目模板，使用 <span class="highlight">Axios</span> 获取数据，
+                           使用 <span class="highlight">Vue Router</span> 进行前端路由的切换及传参，使用 <span class="hightlight">Watch</span> 监听路由的变化，<span class="highlight">Webpack</span> 打包。
                 </li>
                 <li>
                   技术栈：Vue-cli / Vue Router / Axios / ES6 / Npm / SCSS
@@ -170,8 +179,8 @@
             <dd>
               <ul>
                 <li>
-                  项目介绍： 该项目是一个简易的 UI 组件库，主要参照了 Framework7、Ant Design、Element UI 等 UI 库。该框架提供了 Button、Tabs、Grid、Input、Layout、Popover、Toast 等组件。
-                            主要使用了 vue、parcel、npm、vuepress、sass 等技术，使用 karma、Mocha、Sinon 等做了单元测试，并用 TravisCI 实现持续集成。最终使用 Vue Press 制作官方文档。
+                  项目介绍： 该项目是一个简易的 UI 组件库，主要参照了 Framework7、Ant Design、Element UI 等 UI 库。该框架提供了 <span class="highlight">Button</span> 、<span class="highlight">Tabs</span> 、<span class="highlight">Grid</span> 、<span class="highlight">Input</span> 、<span class="highlight">Layout</span> 、<span class="highlight">Popover</span> 、<span class="highlight">Toast</span> 等组件。
+                            主要使用了 <span class="highlight">vue</span> 、<span class="highlight">parcel</span> 、<span class="highlight">npm</span> 、<span class="highlight">vuepress</span> 、<span class="highlight">scss</span> 等技术，使用 <span class="highlight">karma</span> 、<span class="highlight">Mocha</span> 、<span class="highlight">Sinon</span> 等做了单元测试，并用 <span class="highlight">TravisCI</span> 实现持续集成。最终使用 <span class="highlight">Vue Press</span> 制作官方文档。
                             完成该项目，使我对前端工程化流程以及单元测试的重要性有了进一步的理解。
                 </li>
                 <li>
@@ -187,10 +196,17 @@
             </dd>
             
             <dt style="margin-top: 14px;">可爱皮卡丘</dt>
+            
             <dd>
               <ul>
+                <li style="list-style: none;">
+                    <a href="https://dongdong12138.github.io/Pikachu/index.html">
+                      <img src="./images/pikaqiu.png" width="580" alt="皮卡丘截图预览">
+                    </a>
+                </li>
                 <li>
-                  项目介绍：该项目是使用 原生JS + jQuery 开发的，动态显示 CSS 画一个皮卡丘过程的小作品。
+                  项目介绍：该项目是使用 <span class="highlight">原生JS</span> + <span class="highlight">jQuery</span> 开发的，
+                           <span class="highlight">动态显示 CSS</span> 画一个皮卡丘过程的小作品。
                            该作品主要思路是通过间隔计时器遍历预先设置在 preview 标签内代码，将其一个个显示在页面上，并在 style 标签上作同样处理，以使代码 CSS 生效。
                            友情提示：在移动端观看效果更佳。
                 </li>
@@ -215,6 +231,9 @@
                 <li>
                   <a href="https://github.com/dongdong12138/chrome-translator">董董翻译</a>（Chrome 划词翻译插件）
                 </li>
+                <li>
+                  <a href="https://dongdong12138.github.io/snake/index.html">贪吃蛇小游戏</a>（PC端）
+                </li>
               </ul>
             </dd>
           </dl>
@@ -231,7 +250,10 @@
         <section>
           <h2>个人评价</h2>
           <p>
-            痴迷新技术，喜欢承担有技术难度的工作，爱分享，善于知识总结梳理
+            2016年7月毕业于南昌理工学院，毕业前于南昌档案馆实习（具体工作内容需保密）。<br>
+            2017年9月于上海在教育培训机构任职至今。<br>
+            工作期间了解到前端开发，激起了编程的兴趣，迄今为止利用业余时间自学前端近一年。<br>
+            热爱 coding ，代码整洁，享受调试代码及解决 bug 的过程，有总结书写 <a style="text-decoration: none;" href="https://www.zhihu.com/people/dongdong12138/activities"><span class="highlight">技术博客（点击查看）</span></a> 的习惯。
           </p>
         </section>
       </div>

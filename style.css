@@ -8,10 +8,22 @@
    overflow: hidden;
 }
 body {
-  font-size: 14px/1.5 Arial;
+  font-size: 14px/1.8 Arial;
   background: #efefef;
   color: #666;
   padding: 10px 0;
+}
+@media print {
+  body {
+    margin-top: -10px;
+  }
+}
+span.highlight {
+  color: #2196f3;
+  background: #EEEEEE;
+  border: 1px solid #cfd8dc;
+  border-radius: 3px;
+  padding: 2px 4px;
 }
 
 
@@ -35,15 +47,11 @@ aside {
 main {
   flex: 1;
   background: #fff;
-  /* height: calc(100vh - 137px); */
 }
 @media (max-width: 768px) {
  aside {
     width: 100%;
   }
-  main {
-    /* height: calc(100vh - 237px); */
-  } 
 }
 
 
@@ -227,6 +235,16 @@ aside .github {
   color: #fff;
   margin: 10px 0;
 }
+aside .blog .online {
+  display: none;
+}
+@media print {
+  aside .blog .online {
+    display: block;
+    background: #F56C6C;
+    color: #fff;
+  }
+}
 
 main .main-layout {
   width: 94%;
@@ -253,7 +271,23 @@ main section dd {
 }
 main section ul {
   margin-left: 30px;
+  line-height: 1.8em;
 }
+@media print {
+  main .my-skills .print-special {
+    margin-top: 12px;
+    margin-bottom: -10px;
+  }
+  main section ul li img {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  main section ul li img {
+    display: none;
+  }
+}
+
 main section:last-child {
   border-bottom: none;
 }
