@@ -8,7 +8,7 @@
    overflow: hidden;
 }
 body {
-  font-size: 14px/1.8 Arial;
+  font: 14px/1.8 Arial;
   background: #efefef;
   color: #666;
   padding: 10px 0;
@@ -16,7 +16,7 @@ body {
 @media print {
   body {
     margin-top: -10px;
-    font-size: 20px/1.8 Arial;
+    font: 20px/1.8 Arial;
   }
 }
 span.highlight {
@@ -95,6 +95,13 @@ aside .aside-layout {
   height: calc(100% + 75px);
   margin: 0 auto;
   margin-top: -75px;
+}
+
+@media print {
+  aside .aside-layout,
+  aside .aside-layout section dl {
+    font-size: 20px;
+  }   
 }
 aside .avatar {
   display: block;
@@ -274,10 +281,14 @@ main section ul {
   margin-left: 30px;
   line-height: 1.8em;
 }
+
 @media print {
+  main section ul {
+    font-size: 20px;
+    line-height: 1.5;
+  }  
   main .my-skills .print-special {
-    margin-top: 12px;
-    margin-bottom: -10px;
+    /* margin-bottom: -0.5em; */
   }
   main section ul li img {
     display: none;
@@ -298,5 +309,10 @@ main .my-skills dt:not(:first-child) {
 .main-layout section:nth-child(3) dd,
 .main-layout section:nth-child(4) p {
   padding-left: 20px;
+}
+@media print {
+  .main-layout section:last-child {
+    font-size: 20px;
+  }
 }
 
