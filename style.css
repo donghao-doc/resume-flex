@@ -238,8 +238,22 @@ aside .zhihu {
 aside .zhihu:hover {
   background: #0077e6;
 }
+aside .juejin {
+  background: #1e80ff;
+  color: #fff;
+  letter-spacing: 4px;
+  margin: 10px 0;
+}
+aside .juejin:hover {
+  background: #1171ee;
+}
 aside .github {
   background: #24292e;
+  color: #fff;
+  margin: 10px 0;
+}
+aside .gitee {
+  background: rgb(199, 29, 35);
   color: #fff;
   margin: 10px 0;
 }
