@@ -7,6 +7,8 @@
    fill: currentColor;
    overflow: hidden;
 }
+strong { color: #000; }
+.tip { color: #f56c6c; }
 body {
   font: 14px/1.8 Arial;
   background: #efefef;
@@ -285,7 +287,8 @@ main section dt {
   font-size: 16px;
   font-weight: 700;
   color: #000;
-  margin-bottom: 14px;
+  /* margin-bottom: 14px; */
+  margin: 14px 0;
   width: 100%;
 }
 main section dd {
@@ -330,3 +333,32 @@ main .my-skills dt:not(:first-child) {
   }
 }
 
+.main-layout dl.work-mobile {
+  /* border: 1px solid red; */
+}
+.main-layout dl.work-mobile dt {
+  /* margin-top: 10px; */
+}
+.main-layout dl.work-mobile dd {
+  /* border: 1px solid green; */
+  display: flex;
+}
+.main-layout dl.work-mobile dd:last-child {
+  display: block;
+}
+.main-layout dl.work-mobile dd:last-child a {
+  margin-right: 10px;
+}
+.main-layout dl.work-mobile ul > li:last-child {
+  /* border: 1px solid blue; */
+  display: none;
+}
+@media (max-width: 768px) {
+  dl.work-mobile img,
+  dl.work-mobile li.tip {
+    display: none;
+  }
+  .main-layout dl.work-mobile ul > li:last-child {
+    display: block;
+  }
+}
