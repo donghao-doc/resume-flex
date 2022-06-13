@@ -117,7 +117,7 @@
             <dt>JavaScript</dt>
             <dd>
               <ul>
-                <li>变量提升、作用域、立即执行函数（IIFE）、对象拷贝、闭包等</li>
+                <li>变量提升、作用域、立即执行函数（IIFE）、深拷贝、浅拷贝、闭包等</li>
                 <li>DOM 增删改查、事件模型（捕获 / 冒泡 / 事件委托 / 事件循环 / 任务队列）等</li>
                 <li>BOM、Ajax、跨域、JSONP、CORS、Promise、async await</li>
                 <li>原型、原型链、继承、this、ES6、正则表达式、面向对象</li>
@@ -130,25 +130,35 @@
                 <li>类型声明、抽象类、接口、泛型、工具类型</li>
               </ul>
             </dd>
-            <dt>jQuery</dt>
-            <dd>
-              <ul>
-                <li>DOM操作、属性操作、事件、动画等</li>
-                <li>Ajax、Promise、日常效果实现等</li>
-              </ul>
-            </dd>
             <dt>HTTP</dt>
             <dd>
               <ul>
-                <li>HTTP头、状态码</li>
+                <li>GET、POST、状态码</li>
               </ul>
             </dd>
-            <dt>Vue</dt>
+            <dt>Vue2</dt>
             <dd>
               <ul>
-                <li>生命周期钩子、指令、事件、过滤器、计算属性</li>
-                <li>组件通信、数据验证、父链子链、插槽、render函数</li>
-                <li>vue-cli、vue-router、Axios、vuex、ElementUI</li>
+                <li>响应式原理、事件、计算属性与监视、key的原理、过滤器、自定义指令、生命周期</li>
+                <li>组件通信、render函数、mixin、插件、nextTick、过渡与动画、插槽</li>
+                <li>Vue Cli、Vue Router、Axios、Vuex、ElementUI</li>
+              </ul>
+            </dd>
+            <dt>Vue3</dt>
+            <dd>
+              <ul>
+                <li>setup、ref、reactive、响应式原理、计算属性与监视、生命周期、自定义hook函数</li>
+                <li>provide与inject、shallowReactive、shallowRef</li>
+                <li>readonly、shallowReadonly、toRaw、markRaw</li>
+                <li>Fragment、Teleport</li>
+              </ul>
+            </dd>
+            <dt>Node.js</dt>
+            <dd>
+              <ul>
+                <li>events 模块、http 模块、fs 模块、path 模块</li>
+                <li>Buffer、流（stream 模块）</li>
+                <li>MySQL 数据类型、sql 语句</li>
               </ul>
             </dd>
             <dt>其他技能</dt>
@@ -188,6 +198,7 @@
                     <li>与后端对接接口，进行前后端联调</li>
                     <li>修复测试提交的bug，通过测试用例</li>
                     <li>开发完成后提交淘宝小二审核，根据小二提出的建议进行修改，最后发布上线</li>
+                    <li></li>
                   </ul>
                 </li>
                 <li class="tip">
@@ -221,6 +232,7 @@
                     <li>与后端对接接口，进行前后端联调</li>
                     <li>修复测试提交的bug，通过测试用例</li>
                     <li>开发完成后提交淘宝小二审核，根据小二提出的建议进行修改，最后发布上线</li>
+                    <li></li>
                   </ul>
                 </li>
                 <li class="tip">
@@ -255,6 +267,7 @@
                     <li>修复测试提交的bug，通过测试用例</li>
                     <li>开发完成后提交淘宝小二审核，根据小二提出的建议进行修改，最后发布上线</li>
                     <li>驻场星巴克直播间，配合主播为用户抽奖</li>
+                    <li></li>
                   </ul>
                 </li>
                 <li class="tip">
@@ -289,6 +302,7 @@
                     <li>与后端对接接口，进行前后端联调</li>
                     <li>修复测试提交的bug，通过测试用例</li>
                     <li>开发完成后提交淘宝小二审核，根据小二提出的建议进行修改，最后发布上线</li>
+                    <li></li>
                   </ul>
                 </li>
                 <li class="tip">
@@ -324,6 +338,7 @@
                     <li>与后端对接接口，进行前后端联调</li>
                     <li>修复测试提交的bug，通过测试用例</li>
                     <li>开发完成后提交淘宝小二审核，根据小二提出的建议进行修改，最后发布上线</li>
+                    <li></li>
                   </ul>
                 </li>
                 <li class="tip">
@@ -532,18 +547,10 @@
         </section>
 
         <section>
-          <h2>教育经历</h2>
-          <dl>
-            <dt>南昌理工学院</dt>
-            <dd>计算机应用专业</dd>
-          </dl>
-        </section>
-
-        <section>
           <h2>个人经历</h2>
           <p>
             2016年7月毕业于南昌理工学院，毕业前于南昌档案馆实习。<br>
-            2017年9月-2019年9月在上海北苑教育机构任职。<br>
+            2017年9月-2019年9月在上海北苑教育机构任职，工作期间利用业余时间自学前端开发。<br>
             2019年9月-2022年4月在上海莫凡信息技术有限公司任职前端开发，入职前半年开发的是淘宝移动端 H5 业务，之后一直开发的是淘宝小程序、小部件、店铺装修模块等业务。
             <br>
             自学及工作过程中有总结书写技术博客的习惯：
@@ -554,6 +561,14 @@
               <span class="highlight">我的掘金（点击查看）</span>
             </a>
           </p>
+        </section>
+
+        <section>
+          <h2>教育经历</h2>
+          <dl>
+            <dt>南昌理工学院</dt>
+            <dd>计算机应用专业</dd>
+          </dl>
         </section>
 
       </div>
