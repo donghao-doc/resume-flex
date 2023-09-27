@@ -1,0 +1,25 @@
+{
+  "name": "resume-flex",
+  "version": "1.0.0",
+  "description": "在线版个人简历",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongdong12138/resume-flex.git"
+  },
+  "keywords": [
+    "简历",
+    "HTML",
+    "SCSS",
+    "Webpack"
+  ],
+  "author": "BarryDong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dongdong12138/resume-flex/issues"
+  },
+  "homepage": "https://github.com/dongdong12138/resume-flex#readme"
+}
