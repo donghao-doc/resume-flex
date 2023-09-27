@@ -1,0 +1,23 @@
+header {
+  color: #fff;
+  text-align: center;
+
+  > h1 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    margin-bottom: 4px;
+  }
+
+  > p {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  // @media (max-width: 768px) {
+  //   > h1, p {
+  //     text-align: right;
+  //     margin-right: 40px;
+  //   }
+  // }
+}

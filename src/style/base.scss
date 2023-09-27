@@ -3,9 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+ul, li { list-style: none; }
 
 .icon {
-  width: 1.1em; height: 1.1em;
+  width: 1em; height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
@@ -16,7 +17,7 @@ strong { color: #000; }
 .tip { color: #f56c6c; }
 
 body {
-  color: #666; font: 14px/1.8 Arial;
+  font: 14px/1.8 Arial;
   background: #efefef;
   padding: 10px 0;
 }

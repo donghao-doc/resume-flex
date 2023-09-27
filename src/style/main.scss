@@ -1,0 +1,152 @@
+main {
+  display: flex;
+}
+
+// 个人信息
+main > .information {
+  color: #fff; font-family: "subset.YAD85pph3W4", sans-serif;
+  width: 250px;
+  background: rgb(165, 185, 189);
+  padding: 40px 0;
+  display: flex; flex-direction: column; align-items: center;
+  > .avatar {
+    width: 150px; height: 150px;
+    border: 4px solid #fff; border-radius: 50%;
+  }
+  > .name {
+    color: #020202; font-size: 38px;
+    font-family: "subset.YAD85jmEETg", sans-serif; font-weight: normal;
+    line-height: 60px;
+  }
+  > .job {
+    color: #020202; font-size: 16px;
+    line-height: 30px;
+    > span {
+      display: inline-block;
+      width: 4em;
+      white-space: nowrap;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+  > .concat {
+    margin-top: 40px;
+    li {
+      line-height: 30px;
+      display: flex; align-items: center;
+    }
+    svg {
+      width: 16px; height: 16px;
+      margin-right: 20px;
+    }
+    em { font-style: normal; }
+  }
+  > .skills {
+    align-self: stretch;
+    padding: 0 20px;
+    margin-top: 40px;
+    h3 {
+      font-size: 22px; font-weight: normal;
+    }
+    dl {
+      line-height: 30px;
+      display: flex; flex-wrap: wrap; align-items: center;
+    }
+    dt { width: 40%; }
+    dd {
+      width: 60%; height: 4px;
+      background: #000;
+      border-radius: 2px;
+      overflow: hidden;
+      > i {
+        display: block;
+        height: 100%;
+        background: #fff;
+      }
+    }
+  }
+  > .hobby {
+    margin-top: 40px;
+    align-self: stretch;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    h3 {
+      font-size: 22px; font-weight: normal;
+      width: 100%;
+    }
+    .hobby-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+      line-height: 30px;
+      &:last-child { margin-right: 0; }
+      svg { width: 50px; height: 50px; }
+    }
+  }
+  > .wechat {
+    width: 150px;
+    margin-top: 40px;
+  }
+
+  /*aside .skills dl {*/
+  /*  justify-content: space-between;*/
+  /*  align-items: center;*/
+  /*}*/
+
+  /*aside .skills dt {*/
+  /*  */
+  /*}*/
+
+  /*aside .skills dd {*/
+  /*  */
+  /*  */
+  /*  width: 60%;*/
+  /*  padding: 0;*/
+  /*}*/
+
+
+
+  //
+  // ul.concat {
+  //   border: 1px solid red;
+  //   li {
+  //     line-height: 30px;
+  //   }
+  //   em {
+  //     font-style: normal;
+  //     margin-left: 10px;
+  //   }
+  // }
+}
+
+// aside .concat dt {
+//
+//   padding-left: 20px;
+//   margin-bottom: 4px;
+// }
+//
+
+//
+// @media (max-width: 768px) {
+//   aside .concat dt {
+//     width: 20%;
+//     padding-left: 20px;
+//     margin-bottom: 4px;
+//   }
+//
+//   aside .concat dd {
+//     width: 80%;
+//     padding-left: 0;
+//   }
+// }
+
+main > .summary {
+  flex: 1;
+  height: 300px; // 删掉
+  background: #fff;
+}
