@@ -1,57 +1,41 @@
-/* 页面布局 */
+// 页面布局
 .layout {
   border: 1px solid red;
   max-width: 900px;
   margin: 0 auto;
+
   > header {
     width: 100%;
     background: #3c3c3c;
     padding: 50px 0 20px 0;
   }
+
   > main {
     border: 1px solid green;
     height: 300px;
   }
+
   > section {
     border: 1px solid blue;
     height: 300px;
   }
+
   > footer {
     border: 1px solid orange;
     height: 300px;
   }
 }
 
-
-
-
-/*aside {*/
-/*  width: 240px;*/
-/*  background: #fff;*/
-/*}*/
-/*!*main {*!*/
-/*!*  flex: 1;*!*/
-/*!*  background: #fff;*!*/
-/*!*}*!*/
-/*@media (max-width: 768px) {*/
-/*  aside {*/
-/*    width: 100%;*/
-/*  }*/
-/*}*/
-
-
-/*!*内容布局*!*/
-/*header {*/
-/*  text-align: center;*/
-/*  color: #fff;*/
-/*}*/
-
-/*header > h1 {*/
-/*  font-size: 30px;*/
-/*  letter-spacing: 10px;*/
-/*  padding-left: 10px;*/
-/*  margin-bottom: 4px;*/
-/*}*/
+// 顶部
+header {
+  color: #fff;
+  text-align: center;
+  > h1 {
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding-left: 10px; margin-bottom: 4px;
+  }
+}
 
 /*header > p {*/
 /*  font-size: 14px;*/
@@ -69,6 +53,24 @@
 /*    margin-right: 40px;*/
 /*  }*/
 /*}*/
+
+
+/*aside {*/
+/*  width: 240px;*/
+/*  background: #fff;*/
+/*}*/
+/*!*main {*!*/
+/*!*  flex: 1;*!*/
+/*!*  background: #fff;*!*/
+/*!*}*!*/
+/*@media (max-width: 768px) {*/
+/*  aside {*/
+/*    width: 100%;*/
+/*  }*/
+/*}*/
+
+
+
 
 /*aside {*/
 /*  border-right: 1px solid #ccc;*/
