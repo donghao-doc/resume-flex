@@ -1,0 +1,35 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 1.1em; height: 1.1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+strong { color: #000; }
+
+.tip { color: #f56c6c; }
+
+body {
+  color: #666; font: 14px/1.8 Arial;
+  background: #efefef;
+  padding: 10px 0;
+}
+@media print {
+  body {
+    font: 20px/1.8 Arial;
+    margin-top: -10px;
+  }
+}
+
+span.highlight {
+  color: #2196f3;
+  background: #EEEEEE;
+  border: 1px solid #cfd8dc; border-radius: 3px;
+  padding: 2px 4px;
+}
