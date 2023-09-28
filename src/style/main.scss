@@ -1,10 +1,11 @@
 main {
+  font-family: "subset.YAD85pph3W4", sans-serif;
   display: flex;
 }
 
 // 个人信息
 main > .information {
-  color: #fff; font-family: "subset.YAD85pph3W4", sans-serif;
+  color: #fff;
   width: 250px;
   background: rgb(165, 185, 189);
   padding: 40px 0;
@@ -124,29 +125,48 @@ main > .information {
   // }
 }
 
-// aside .concat dt {
-//
-//   padding-left: 20px;
-//   margin-bottom: 4px;
-// }
-//
-
-//
-// @media (max-width: 768px) {
-//   aside .concat dt {
-//     width: 20%;
-//     padding-left: 20px;
-//     margin-bottom: 4px;
-//   }
-//
-//   aside .concat dd {
-//     width: 80%;
-//     padding-left: 0;
-//   }
-// }
-
 main > .summary {
+  color: #020202;
   flex: 1;
-  height: 300px; // 删掉
   background: #fff;
+  padding: 40px 20px;
+  .summary-title {
+    display: flex;
+    > .icon-box {
+      width: 50px; height: 50px;
+      background: #295257;
+      border-radius: 50%;
+      display: flex; justify-content: center; align-items: center;
+      > svg {
+        width: 30px; height: 30px;
+      }
+    }
+    > h2 {
+      font-weight: normal;
+      font-size: 25px;
+      flex: 1;
+      margin-left: 20px;
+      border-bottom: 1px solid red;
+    }
+  }
+  .company {
+    margin-top: 20px;
+    > .company-title {
+      font-size: 16px;
+      display: flex; justify-content: space-between;
+    }
+    > .company-work {
+      color: #64696d;
+      padding-left: 20px; margin-top: 10px;
+      > li {
+        list-style: disc;
+        ul {
+          padding-left: 20px;
+          > li {
+            list-style: circle;
+          }
+        }
+      }
+    }
+  }
 }

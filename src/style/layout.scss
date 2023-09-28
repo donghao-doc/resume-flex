@@ -2,13 +2,9 @@
 .layout {
   border: 1px solid red;
   max-width: 900px;
+  background: url("../images/BG.webp") no-repeat center top;
+  background-size: 100% auto;
   margin: 0 auto;
-
-  > header {
-    width: 100%;
-    background: #3c3c3c;
-    padding: 50px 0 20px 0;
-  }
 
   > section {
     border: 1px solid blue;
