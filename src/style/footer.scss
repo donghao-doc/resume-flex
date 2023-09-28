@@ -1,0 +1,21 @@
+@import "common.scss";
+
+footer {
+  border: 1px solid red;
+  background: #fff;
+  padding: 40px 30px;
+}
+
+footer > .company {
+  .company-title {
+    font-size: 16px; font-weight: bold;
+    display: flex; justify-content: space-between;
+  }
+  @include sectionStyle;
+}
+
+footer > .study {
+  margin-top: 40px;
+  .study-title { font-size: 16px; font-weight: bold; }
+  @include sectionStyle;
+}

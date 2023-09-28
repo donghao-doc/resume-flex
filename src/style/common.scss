@@ -1,0 +1,44 @@
+@mixin sectionStyle {
+  section > .section-title {
+    display: flex;
+
+    > .icon-box {
+      width: 50px; height: 50px;
+      background: #295257; border-radius: 50%;
+      display: flex; justify-content: center; align-items: center;
+      > svg { width: 30px; height: 30px; }
+    }
+
+    > h2 {
+      font-size: 25px; font-weight: normal;
+      flex: 1;
+      border-bottom: 2px solid #295257;
+      margin-left: 20px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 10px; height: 10px;
+        background: #fff; border: 2px solid #295257;
+        position: absolute; right: 0; bottom: -6px;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  section > .section-content {
+    margin-top: 20px;
+    > ul {
+      color: #64696d;
+      padding-left: 20px; margin-top: 10px;
+      > li {
+        list-style: disc;
+        strong { font-weight: bold; }
+        ul {
+          padding-left: 20px;
+          > li { list-style: circle; }
+        }
+      }
+    }
+  }
+}

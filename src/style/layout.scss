@@ -1,18 +1,7 @@
 // 页面布局
 .layout {
-  border: 1px solid red;
-  max-width: 900px;
+  max-width: 960px;
   background: url("../images/BG.webp") no-repeat center top;
   background-size: 100% auto;
   margin: 0 auto;
-
-  > section {
-    border: 1px solid blue;
-    height: 300px;
-  }
-
-  > footer {
-    border: 1px solid orange;
-    height: 300px;
-  }
 }

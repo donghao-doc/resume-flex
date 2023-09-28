@@ -1,3 +1,5 @@
+@import "./common.scss";
+
 main {
   display: flex;
 }
@@ -13,6 +15,7 @@ main > .information {
   > .avatar {
     width: 150px; height: 150px;
     border: 4px solid #fff; border-radius: 50%;
+    margin-top: -110px;
   }
 
   > .name {
@@ -36,7 +39,7 @@ main > .information {
   }
 
   > .concat {
-    margin-top: 40px;
+    margin-top: 30px;
     li {
       line-height: 30px;
       display: flex; align-items: center;
@@ -48,73 +51,63 @@ main > .information {
     em { font-style: normal; }
   }
 
-  > .skills {
-    align-self: stretch;
-    padding: 0 20px; margin-top: 40px;
-    h3 { font-size: 22px; font-weight: normal; }
-    dl {
-      line-height: 30px;
-      display: flex; flex-wrap: wrap; align-items: center;
-    }
-    dt { width: 40%; }
-    dd {
-      width: 60%; height: 4px;
-      background: #000; border-radius: 2px;
-      overflow: hidden;
-      > i {
-        display: block;
-        height: 100%;
-        background: #fff;
-      }
-    }
-  }
+  // > .skills {
+  //   align-self: stretch;
+  //   padding: 0 20px; margin-top: 30px;
+  //   h3 { font-size: 22px; font-weight: normal; }
+  //   dl {
+  //     line-height: 30px;
+  //     display: flex; flex-wrap: wrap; align-items: center;
+  //   }
+  //   dt { width: 40%; }
+  //   dd {
+  //     width: 60%; height: 4px;
+  //     background: #000; border-radius: 2px;
+  //     overflow: hidden;
+  //     > i {
+  //       display: block;
+  //       height: 100%;
+  //       background: #fff;
+  //     }
+  //   }
+  // }
 
   > .blog {
     align-self: stretch;
-    padding: 0 20px;
-    margin-top: 40px;
+    padding: 0 20px; margin-top: 30px;
     > a {
       display: block;
-      line-height: 40px;
-      text-align: center;
-      text-decoration: none;
       border-radius: 4px;
+      line-height: 40px; text-align: center; text-decoration: none;
       margin-top: 10px;
     }
     > .mySite {
-      background: #2e8555;
       color: #fff;
+      background: #2e8555;
       letter-spacing: 4px;
       margin-top: 0;
     }
-    > .zhihu {
-      background: #0084ff;
+    > .github {
       color: #fff;
+      background: #24292e;
+    }
+    > .zhihu {
+      color: #fff;
+      background: #0084ff;
       letter-spacing: 4px;
       &:hover { background: #0077e6; }
     }
     > .juejin {
+      color: #fff;
       background: #1e80ff;
-      color: #fff;
       letter-spacing: 4px;
-      // margin: 10px 0;
       &:hover { background: #1171ee; }
-    }
-    > .github {
-      background: #24292e;
-      color: #fff;
-      // margin: 10px 0;
-    }
-    > .gitee {
-      background: rgb(199, 29, 35);
-      color: #fff;
-      // margin: 10px 0;
     }
   }
 
   > .hobby {
     align-self: stretch;
-    padding: 0 20px; margin-top: 40px;
+    padding: 0 20px; margin-top: 30px;
     display: flex; flex-wrap: wrap;
     h3 {
       font-size: 22px; font-weight: normal;
@@ -131,61 +124,15 @@ main > .information {
 
   > .wechat {
     width: 150px;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
 
-// 工作经历
-main > .summary {
+// 专业技能
+main > .skills {
   color: #020202;
   flex: 1;
   background: #fff;
-  padding: 40px 20px;
-
-  .summary-title {
-    display: flex;
-    > .icon-box {
-      width: 50px; height: 50px;
-      background: #295257; border-radius: 50%;
-      display: flex; justify-content: center; align-items: center;
-      > svg { width: 30px; height: 30px; }
-    }
-    > h2 {
-      font-size: 25px; font-weight: normal;
-      flex: 1;
-      border-bottom: 2px solid #295257;
-      margin-left: 20px;
-      position: relative;
-      &::after {
-        content: "";
-        display: block;
-        width: 10px; height: 10px;
-        background: #fff; border: 2px solid #295257;
-        position: absolute; right: 0; bottom: -6px;
-        transform: rotate(45deg);
-      }
-    }
-  }
-
-  .company {
-    margin-top: 20px;
-    > .company-title {
-      font-size: 16px; font-weight: bold;
-      display: flex; justify-content: space-between;
-    }
-    > .company-work {
-      color: #64696d;
-      padding-left: 20px; margin-top: 10px;
-      > li {
-        list-style: disc;
-        strong { font-weight: bold; }
-        ul {
-          padding-left: 20px;
-          > li {
-            list-style: circle;
-          }
-        }
-      }
-    }
-  }
+  padding: 40px 30px;
+  @include sectionStyle;
 }

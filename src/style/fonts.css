@@ -12,3 +12,8 @@
   font-family: "YADdv1J3R-M";
   src: url("../fonts/YADdv1J3R-M.woff") format("woff");
 }
+
+@font-face {
+  font-family: "JS-Sirium-Normal";
+  src: url("../fonts/JS-Sirium-Normal.woff2") format("woff2");
+}

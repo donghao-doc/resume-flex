@@ -1,25 +1,18 @@
 header {
   color: #fff;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 30px;
 
   > h1 {
-    font-size: 30px;
-    font-family: "YADdv1J3R-M", sans-serif;
-    // letter-spacing: 10px;
-    // padding-left: 10px;
-    // margin-bottom: 4px;
+    font-size: 80px; font-weight: normal;
+    font-family: "JS-Sirium-Normal", sans-serif;
+    line-height: 80px;
+    letter-spacing: 5px;
   }
 
   > p {
-    font-size: 14px;
-    // margin-bottom: 4px;
+    font-size: 20px;
+    font-family: "YAD85jmEETg", sans-serif;
+    line-height: 20px;
   }
-
-  // @media (max-width: 768px) {
-  //   > h1, p {
-  //     text-align: right;
-  //     margin-right: 40px;
-  //   }
-  // }
 }
