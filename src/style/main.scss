@@ -69,6 +69,48 @@ main > .information {
       }
     }
   }
+  > .blog {
+    align-self: stretch;
+    padding: 0 20px;
+    margin-top: 40px;
+    > a {
+      display: block;
+      line-height: 40px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    > .mySite {
+      background: #2e8555;
+      color: #fff;
+      letter-spacing: 4px;
+      margin-top: 0;
+    }
+    > .zhihu {
+      background: #0084ff;
+      color: #fff;
+      letter-spacing: 4px;
+      &:hover { background: #0077e6; }
+    }
+    > .juejin {
+      background: #1e80ff;
+      color: #fff;
+      letter-spacing: 4px;
+      // margin: 10px 0;
+      &:hover { background: #1171ee; }
+    }
+    > .github {
+      background: #24292e;
+      color: #fff;
+      // margin: 10px 0;
+    }
+    > .gitee {
+      background: rgb(199, 29, 35);
+      color: #fff;
+      // margin: 10px 0;
+    }
+  }
   > .hobby {
     margin-top: 40px;
     align-self: stretch;
@@ -125,6 +167,7 @@ main > .information {
   // }
 }
 
+// 工作经历
 main > .summary {
   color: #020202;
   flex: 1;
@@ -146,7 +189,22 @@ main > .summary {
       font-size: 25px;
       flex: 1;
       margin-left: 20px;
-      border-bottom: 1px solid red;
+      border-bottom: 2px solid #295257;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border: 2px solid #295257;
+        position: absolute;
+        right: 0;
+        bottom: -6px;
+        transform: rotate(45deg);
+      }
+      // background: url("../images/line.png") no-repeat center bottom;
+      // background-size: 100% auto;
     }
   }
   .company {
