@@ -3,34 +3,44 @@
   padding: 0;
   box-sizing: border-box;
 }
-ul, li { list-style: none; }
+
+ul, li {
+  list-style: none;
+}
 
 .icon {
-  width: 1em; height: 1em;
+  width: 1em;
+  height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
   overflow: hidden;
 }
 
-strong { color: #000; }
+strong {
+  // color: #000;
+}
 
-.tip { color: #f56c6c; }
+.tip {
+  color: #f56c6c;
+}
 
 body {
-  font: 14px/1.8 Arial;
+  font: 14px/1.8 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
   background: #efefef;
   padding: 10px 0;
 }
+
 @media print {
   body {
-    font: 20px/1.8 Arial;
     margin-top: -10px;
+    // font-size: 14px;
   }
 }
 
 span.highlight {
   color: #2196f3;
   background: #EEEEEE;
-  border: 1px solid #cfd8dc; border-radius: 3px;
+  border: 1px solid #cfd8dc;
+  border-radius: 3px;
   padding: 2px 4px;
 }

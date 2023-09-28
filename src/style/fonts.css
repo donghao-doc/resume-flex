@@ -1,9 +1,14 @@
 @font-face {
-  font-family: 'subset.YAD85pph3W4';
-  src: url('../fonts/subset.YAD85pph3W4.woff') format('woff');
+  font-family: "YAD85pph3W4";
+  src: url("../fonts/YAD85pph3W4.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'subset.YAD85jmEETg';
-  src: url('../fonts/subset.YAD85jmEETg.woff') format('woff');
+  font-family: "YAD85jmEETg";
+  src: url("../fonts/YAD85jmEETg.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YADdv1J3R-M";
+  src: url("../fonts/YADdv1J3R-M.woff") format("woff");
 }

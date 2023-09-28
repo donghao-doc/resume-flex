@@ -1,5 +1,4 @@
 main {
-  font-family: "subset.YAD85pph3W4", sans-serif;
   display: flex;
 }
 
@@ -10,15 +9,17 @@ main > .information {
   background: rgb(165, 185, 189);
   padding: 40px 0;
   display: flex; flex-direction: column; align-items: center;
+
   > .avatar {
     width: 150px; height: 150px;
     border: 4px solid #fff; border-radius: 50%;
   }
+
   > .name {
-    color: #020202; font-size: 38px;
-    font-family: "subset.YAD85jmEETg", sans-serif; font-weight: normal;
+    color: #020202; font-size: 38px; font-weight: normal;
     line-height: 60px;
   }
+
   > .job {
     color: #020202; font-size: 16px;
     line-height: 30px;
@@ -33,6 +34,7 @@ main > .information {
       }
     }
   }
+
   > .concat {
     margin-top: 40px;
     li {
@@ -45,13 +47,11 @@ main > .information {
     }
     em { font-style: normal; }
   }
+
   > .skills {
     align-self: stretch;
-    padding: 0 20px;
-    margin-top: 40px;
-    h3 {
-      font-size: 22px; font-weight: normal;
-    }
+    padding: 0 20px; margin-top: 40px;
+    h3 { font-size: 22px; font-weight: normal; }
     dl {
       line-height: 30px;
       display: flex; flex-wrap: wrap; align-items: center;
@@ -59,8 +59,7 @@ main > .information {
     dt { width: 40%; }
     dd {
       width: 60%; height: 4px;
-      background: #000;
-      border-radius: 2px;
+      background: #000; border-radius: 2px;
       overflow: hidden;
       > i {
         display: block;
@@ -69,6 +68,7 @@ main > .information {
       }
     }
   }
+
   > .blog {
     align-self: stretch;
     padding: 0 20px;
@@ -111,60 +111,28 @@ main > .information {
       // margin: 10px 0;
     }
   }
+
   > .hobby {
-    margin-top: 40px;
     align-self: stretch;
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 0 20px; margin-top: 40px;
+    display: flex; flex-wrap: wrap;
     h3 {
       font-size: 22px; font-weight: normal;
       width: 100%;
     }
     .hobby-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-right: 20px;
       line-height: 30px;
+      margin-right: 20px;
+      display: flex; flex-direction: column; align-items: center;
       &:last-child { margin-right: 0; }
       svg { width: 50px; height: 50px; }
     }
   }
+
   > .wechat {
     width: 150px;
     margin-top: 40px;
   }
-
-  /*aside .skills dl {*/
-  /*  justify-content: space-between;*/
-  /*  align-items: center;*/
-  /*}*/
-
-  /*aside .skills dt {*/
-  /*  */
-  /*}*/
-
-  /*aside .skills dd {*/
-  /*  */
-  /*  */
-  /*  width: 60%;*/
-  /*  padding: 0;*/
-  /*}*/
-
-
-
-  //
-  // ul.concat {
-  //   border: 1px solid red;
-  //   li {
-  //     line-height: 30px;
-  //   }
-  //   em {
-  //     font-style: normal;
-  //     margin-left: 10px;
-  //   }
-  // }
 }
 
 // 工作经历
@@ -173,44 +141,36 @@ main > .summary {
   flex: 1;
   background: #fff;
   padding: 40px 20px;
+
   .summary-title {
     display: flex;
     > .icon-box {
       width: 50px; height: 50px;
-      background: #295257;
-      border-radius: 50%;
+      background: #295257; border-radius: 50%;
       display: flex; justify-content: center; align-items: center;
-      > svg {
-        width: 30px; height: 30px;
-      }
+      > svg { width: 30px; height: 30px; }
     }
     > h2 {
-      font-weight: normal;
-      font-size: 25px;
+      font-size: 25px; font-weight: normal;
       flex: 1;
-      margin-left: 20px;
       border-bottom: 2px solid #295257;
+      margin-left: 20px;
       position: relative;
       &::after {
         content: "";
         display: block;
-        width: 10px;
-        height: 10px;
-        background: #fff;
-        border: 2px solid #295257;
-        position: absolute;
-        right: 0;
-        bottom: -6px;
+        width: 10px; height: 10px;
+        background: #fff; border: 2px solid #295257;
+        position: absolute; right: 0; bottom: -6px;
         transform: rotate(45deg);
       }
-      // background: url("../images/line.png") no-repeat center bottom;
-      // background-size: 100% auto;
     }
   }
+
   .company {
     margin-top: 20px;
     > .company-title {
-      font-size: 16px;
+      font-size: 16px; font-weight: bold;
       display: flex; justify-content: space-between;
     }
     > .company-work {
@@ -218,6 +178,7 @@ main > .summary {
       padding-left: 20px; margin-top: 10px;
       > li {
         list-style: disc;
+        strong { font-weight: bold; }
         ul {
           padding-left: 20px;
           > li {
