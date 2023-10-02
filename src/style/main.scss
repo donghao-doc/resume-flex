@@ -1,11 +1,11 @@
 @import "./common.scss";
 
-main {
+.container {
   display: flex;
 }
 
 // 个人信息
-main > .information {
+.container > aside {
   color: #fff;
   width: 250px;
   background: rgb(165, 185, 189);
@@ -13,8 +13,10 @@ main > .information {
   display: flex; flex-direction: column; align-items: center;
 
   > .avatar {
-    width: 150px; height: 150px;
-    border: 4px solid #fff; border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #fff;
+    border-radius: 50%;
     margin-top: -110px;
   }
 
@@ -50,27 +52,6 @@ main > .information {
     }
     em { font-style: normal; }
   }
-
-  // > .skills {
-  //   align-self: stretch;
-  //   padding: 0 20px; margin-top: 30px;
-  //   h3 { font-size: 22px; font-weight: normal; }
-  //   dl {
-  //     line-height: 30px;
-  //     display: flex; flex-wrap: wrap; align-items: center;
-  //   }
-  //   dt { width: 40%; }
-  //   dd {
-  //     width: 60%; height: 4px;
-  //     background: #000; border-radius: 2px;
-  //     overflow: hidden;
-  //     > i {
-  //       display: block;
-  //       height: 100%;
-  //       background: #fff;
-  //     }
-  //   }
-  // }
 
   > .blog {
     align-self: stretch;
@@ -128,11 +109,16 @@ main > .information {
   }
 }
 
-// 专业技能
-main > .skills {
+.container > main {
   color: #020202;
   flex: 1;
   background: #fff;
-  padding: 40px 30px;
+  padding: 0 30px;
   @include sectionStyle;
+
+  // 专业技能、自我评价、教育经历
+  > section {
+    margin-top: 30px;
+    @include sectionStyle;
+  }
 }

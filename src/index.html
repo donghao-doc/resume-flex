@@ -17,11 +17,10 @@
     <p>Personal Resume</p>
   </header>
 
-  <!-- 个人信息、专业技能 -->
-  <main>
+  <div class="container">
 
     <!-- 个人信息 -->
-    <div class="information">
+    <aside>
       <img src="./images/avatar.jpg" alt="头像" class="avatar">
       <h1 class="name">董&nbsp;浩</h1>
       <p class="job">求职意向：<span>前端开发</span></p>
@@ -45,23 +44,6 @@
           <em>286084845@qq.com</em>
         </li>
       </ul>
-<!--      <section class="skills">-->
-<!--        <h3>工作技能</h3>-->
-<!--        <dl>-->
-<!--          <dt>HTML/CSS</dt>-->
-<!--          <dd><i style="width: 90%"></i></dd>-->
-<!--          <dt>JavaScript</dt>-->
-<!--          <dd><i style="width: 80%"></i></dd>-->
-<!--&lt;!&ndash;          <dt>TypeScript</dt>&ndash;&gt;-->
-<!--&lt;!&ndash;          <dd><i style="width: 50%"></i></dd>&ndash;&gt;-->
-<!--          <dt>Vue2/Vue3</dt>-->
-<!--          <dd><i style="width: 80%"></i></dd>-->
-<!--          <dt>React</dt>-->
-<!--          <dd><i style="width: 80%"></i></dd>-->
-<!--          <dt>小程序</dt>-->
-<!--          <dd><i style="width: 80%"></i></dd>-->
-<!--        </dl>-->
-<!--      </section>-->
       <section class="blog">
         <a class="mySite" href="https://dongdong12138.github.io/">我的网站</a>
         <a class="github" href="https://github.com/dongdong12138">我的 GitHub</a>
@@ -84,18 +66,11 @@
         </div>
       </section>
       <img src="./images/wechat.png" alt="微信二维码" class="wechat">
+    </aside>
 
-      <!--      <section class="information">-->
-      <!--        <h2>基础信息</h2>-->
-      <!--        <dl>-->
-      <!--          <dt><i>学历</i><span>:</span></dt>-->
-      <!--          <dd>大专</dd>-->
-      <!--        </dl>-->
-      <!--      </section>-->
-    </div>
+    <main>
 
-    <!-- 专业技能 -->
-    <div class="skills">
+      <!-- 专业技能 -->
       <section>
         <div class="section-title">
           <div class="icon-box">
@@ -105,91 +80,106 @@
         </div>
         <div class="section-content">
           <ul>
-            <li><strong>HTML：</strong>编写代码时遵循 HTML 语义化原则，熟悉 HTML5 中一些新增的标签及属性，有 Canvas、SVG 使用经验</li>
-            <li><strong>CSS：</strong>熟练使用 Flex、Grid 布局，熟悉 CSS 中的盒模型、BFC、边距塌陷等特性，有 CSS3 动画、媒体查询等实战经验</li>
-            <li><strong>Sass：</strong>熟练使用嵌套、变量、mixin、继承等语法，可结合 BEM 命名规范清晰结构层级关系，提高 CSS 代码可读性</li>
-            <li><strong>JavaScript：</strong>熟悉 JS 的核心概念和 ES6 语法，能够合理运用模块化组织代码，对于 DOM、BOM 也有实际操作经验</li>
-            <li><strong>Webpack：</strong>可以使用 Webpack 处理 HTML、样式、JS、图片、字体等资源，配置开发服务器，了解 Webpack 常见优化方案</li>
-            <li><strong>Vue2：</strong>
-              <ul>
-                <li>熟悉响应式原理、虚拟 DOM、key 的原理等概念，能够灵活运用指令、计算属性、监视、双向绑定、生命周期、组件通信、nextTick 等特性</li>
-                <li>对于组件化有深刻认识，有封装、维护通用业务组件经验，并在 npm 上发布了一些开源组件</li>
-                <li>熟悉 Vue Cli，熟练使用 Vue Router、Vuex 等周边生态</li>
-              </ul>
-            </li>
-            <li>
-              <strong>Vue3：</strong>
-              <ul>
-                <li>熟悉响应式原理、生命周期，熟练使用一些常见的 Composition API 和新增的一些内置组件</li>
-                <li>有自学项目经验，能够充分利用 hook 函数并自定义 hook，提高代码可读性和复用性</li>
-              </ul>
-            </li>
-            <li>
-              <strong>React：</strong>
-            </li>
-            <li><strong>周边库：</strong>Axios、ElementUI</li>
+            <li>熟练使用 HTML5、CSS3 进行页面结构的搭建及页面动画的开发，有 Canvas、SVG 使用经验</li>
+            <li>熟练使用 SCSS 编写样式，能够结合 BEM 命名规范清晰结构层级关系，提高 CSS 代码可读性</li>
+            <li>熟练使用 JavaScript 及 ES6 新特性，习惯利用 ES Module 合理组织代码</li>
+            <li>可以使用 Webpack 处理 HTML、样式、JS、图片、字体等资源，配置开发服务器，熟悉 Webpack 常见优化方案</li>
+            <li>熟练使用 Vue 全家桶，有丰富的 Vue2 项目开发经验，具备封装通用组件的能力，以及基于 ElementUI 进行二次封装的能力，并在 npm 上有发布开源组件</li>
+            <li>熟悉 Vue3 新特性及一些常用的 Composition API，能够自定义 hook 函数，提高代码可读性和复用性，有 Vue3 移动端项目经验</li>
+            <li>熟练使用 Git 管理代码，能够快速解决团队协作中代码冲突的问题</li>
+            <li>有 Echarts、vxe-table、Axios 等第三方库的使用经验</li>
           </ul>
         </div>
       </section>
 
-      <!--      <section class="my-skills">-->
-      <!--        <h2>我的技能点</h2>-->
-      <!--        <dl>-->
-      <!--          <dt>HTML & CSS</dt>-->
-      <!--          <dd>-->
-      <!--            <ul>-->
-      <!--              <li class="print-special">HTML 语义化、Form 表单、选择器、常见样式、浏览器调试等</li>-->
-      <!--              <li>盒模型、浮动、定位、BFC、居中、常见布局、svg 图标等</li>-->
-      <!--              <li>Flex、移动端适配、Canvas</li>-->
-      <!--              <li>transition、transform、animation 等 CSS3 属性</li>-->
-      <!--            </ul>-->
-      <!--          </dd>-->
+      <!-- 自我评价 -->
+      <section>
+        <div class="section-title">
+          <div class="icon-box">
+            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-jishu"></use></svg>
+          </div>
+          <h2>自我评价</h2>
+        </div>
+        <div class="section-content">
+          <p>自学前端，迄今已有 4 年前端开发经验，参与过个人独立开发、多人团队协作等多个项目，具有 H5、淘宝小程序、PC、Pad 等多端开发经验，追求代码干净、整洁、易懂，对于页面交互及用户体验可以提出相关建议。持续自主学习新技术，建立了个人笔记及博客网站。</p>
+        </div>
+      </section>
 
-      <!--          <dt>TypeScript</dt>-->
-      <!--          <dd>-->
-      <!--            <ul>-->
-      <!--              <li>类型声明、抽象类、接口、泛型、工具类型</li>-->
-      <!--            </ul>-->
-      <!--          </dd>-->
-      <!--          <dt>HTTP</dt>-->
-      <!--          <dd>-->
-      <!--            <ul>-->
-      <!--              <li>GET、POST、状态码</li>-->
-      <!--            </ul>-->
-      <!--          </dd>-->
+      <!-- 教育经历 -->
+      <section>
+        <div class="section-title">
+          <div class="icon-box">
+            <svg class="icon" aria-hidden="true"><use xlink:href="#icon-study"></use></svg>
+          </div>
+          <h2>教育背景</h2>
+        </div>
+        <div class="section-content">
+          <div><span>南昌理工学院 | 计算机应用专业 | 大专</span></div>
+        </div>
+      </section>
 
-      <!--          <dt>Node.js</dt>-->
-      <!--          <dd>-->
-      <!--            <ul>-->
-      <!--              <li>events 模块、http 模块、fs 模块、path 模块</li>-->
-      <!--              <li>Buffer、流（stream 模块）</li>-->
-      <!--              <li>MySQL 数据类型、sql 语句</li>-->
-      <!--            </ul>-->
-      <!--          </dd>-->
-      <!--          <dt>其他技能</dt>-->
-      <!--          <dd>-->
-      <!--            <ul>-->
-      <!--              <li>Markdown</li>-->
-      <!--              <li>命令行、Git</li>-->
-
-      <!--              <li>Web性能优化</li>-->
-      <!--            </ul>-->
-      <!--          </dd>-->
-      <!--        </dl>-->
-      <!--      </section>-->
-      <!--          <dt>JavaScript</dt>-->
-      <!--          <dd>-->
-      <!--            <ul>-->
-      <!--              <li>变量提升、作用域、立即执行函数（IIFE）、深拷贝、浅拷贝、闭包等</li>-->
-      <!--              <li>DOM 增删改查、事件模型（捕获 / 冒泡 / 事件委托 / 事件循环 / 任务队列）等</li>-->
-      <!--              <li>BOM、Ajax、跨域、JSONP、CORS、Promise、async await</li>-->
-      <!--              <li>原型、原型链、继承、this、ES6、正则表达式、面向对象</li>-->
-      <!--              &lt;!&ndash; <li>单例模式、观察者模式、发布订阅模式</li> &ndash;&gt;-->
-      <!--            </ul>-->
-      <!--          </dd>-->
+    </main>
 
 
-    </div>
+
+<!--      &lt;!&ndash;      <section class="my-skills">&ndash;&gt;-->
+<!--      &lt;!&ndash;        <h2>我的技能点</h2>&ndash;&gt;-->
+<!--      &lt;!&ndash;        <dl>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dt>HTML & CSS</dt>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li class="print-special">HTML 语义化、Form 表单、选择器、常见样式、浏览器调试等</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>盒模型、浮动、定位、BFC、居中、常见布局、svg 图标等</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>Flex、移动端适配、Canvas</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>transition、transform、animation 等 CSS3 属性</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;          </dd>&ndash;&gt;-->
+
+<!--      &lt;!&ndash;          <dt>TypeScript</dt>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>类型声明、抽象类、接口、泛型、工具类型</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;          </dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dt>HTTP</dt>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>GET、POST、状态码</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;          </dd>&ndash;&gt;-->
+
+<!--      &lt;!&ndash;          <dt>Node.js</dt>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>events 模块、http 模块、fs 模块、path 模块</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>Buffer、流（stream 模块）</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>MySQL 数据类型、sql 语句</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;          </dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dt>其他技能</dt>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>Markdown</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>命令行、Git</li>&ndash;&gt;-->
+
+<!--      &lt;!&ndash;              <li>Web性能优化</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;          </dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;        </dl>&ndash;&gt;-->
+<!--      &lt;!&ndash;      </section>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dt>JavaScript</dt>&ndash;&gt;-->
+<!--      &lt;!&ndash;          <dd>&ndash;&gt;-->
+<!--      &lt;!&ndash;            <ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>变量提升、作用域、立即执行函数（IIFE）、深拷贝、浅拷贝、闭包等</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>DOM 增删改查、事件模型（捕获 / 冒泡 / 事件委托 / 事件循环 / 任务队列）等</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>BOM、Ajax、跨域、JSONP、CORS、Promise、async await</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              <li>原型、原型链、继承、this、ES6、正则表达式、面向对象</li>&ndash;&gt;-->
+<!--      &lt;!&ndash;              &lt;!&ndash; <li>单例模式、观察者模式、发布订阅模式</li> &ndash;&gt;&ndash;&gt;-->
+<!--      &lt;!&ndash;            </ul>&ndash;&gt;-->
+<!--      &lt;!&ndash;          </dd>&ndash;&gt;-->
+
+
+<!--    </div>-->
 
     <!--          <dt>肌肤情报局</dt>-->
     <!--          <dd>-->
@@ -221,9 +211,8 @@
 <!--    2019年9月-2022年4月在上海莫凡信息技术有限公司任职前端开发，入职前半年开发的是淘宝移动端 H5 业务，之后一直开发的是淘宝小程序、小部件、店铺装修模块等业务。-->
 <!--    自学及工作过程中有总结书写技术博客的习惯： 我的知乎（点击查看） 我的掘金（点击查看）-->
 
-  </main>
+  </div>
 
-  <!-- 工作经历、自学项目 -->
   <footer>
 
     <!-- 工作经历 -->
@@ -240,22 +229,31 @@
             <span>2022.07 ~ 2023.08</span><span>上海欧睿供应链管理有限公司</span><span>前端开发</span>
           </div>
           <ul>
-            <li><strong>负责项目</strong>：IMO 智能商品运营系统、APO 选款下单系统</li>
-            <li><strong>技术栈</strong>：Vue2、Vue Router、Vuex、Axios、SCSS、ElementUI、vxe-table、ECharts 等</li>
+            <li><strong>负责项目</strong>：IMO 智能商品运营系统（PC）、APO 选款下单系统（Pad/PC）</li>
+            <li><strong>技术栈</strong>：Vue2、Vue Router、Vuex、Axios、SCSS、ElementUI、vxe-table、ECharts、i18n 等</li>
             <li>
               <strong>项目概述</strong>：
               <ul>
-                <li>IMO 智能商品运营系统主要针对大型化妆品、鞋服类公司，根据基础数据、业务数据，进行算法预测完成补调、补仓任务，并为客户提供数据。灵活配置不同的商品运营场景及策略，进行分货/预分货/配货/补货、采购下单/店店调拨/仓仓调拨，保证更科学合理地分货和及时调拨。</li>
-                <li>APO 选款下单系统主要针对大型化妆品、鞋服类商品，进行评级组包、初单计算、店货匹配、销售单等一系列完整流程。实现客户总部和区域间选款订货协同，实现更精准的订单与需求匹配。</li>
+                <li>IMO 智能商品运营系统（PC 端）主要针对大型化妆品、鞋服类公司，根据基础数据、业务数据，进行算法预测完成补调、补仓任务，并为客户提供数据。灵活配置不同的商品运营场景及策略，进行分货/预分货/配货/补货、采购下单/店店调拨/仓仓调拨，保证更科学合理地分货和及时调拨。</li>
+                <li>APO 选款下单系统（Pad/PC 端）主要针对大型化妆品、鞋服类商品，进行评级组包、初单计算、店货匹配、销售单等一系列完整流程。实现客户总部和区域间选款订货协同，实现更精准的订单与需求匹配。</li>
               </ul>
             </li>
             <li>
-              <strong>工作职责</strong>：
+              <strong>项目职责</strong>：
               <ul>
+                <li>参与产品需求、测试用例评审，针对前端页面及交互提出建议</li>
                 <li>开发后台管理系统的前端页面，并与后端联调接口</li>
-                <li>根据测试在禅道提出的 BUG 优先级处理 BUG，判断 BUG 产生原因，并按时修复 BUG</li>
-                <li>使用 Vue.Draggable 实现拖拽效果，以及一些 CSS 动画效果</li>
-                <li>基于 ElementUI，二次封装通用组件，供后端使用，并协助后端处理页面样式问题</li>
+                <li>根据测试在禅道标注的优先级处理 BUG，判断 BUG 产生原因并按时修复，或指派给相应后端人员进行修复</li>
+                <li>基于 ElementUI，二次封装通用业务组件供后端使用，并协助后端处理页面样式问题</li>
+              </ul>
+            </li>
+            <li>
+              <strong>工作成果</strong>：
+              <ul>
+                <li>对 APO 选款下单系统 Pad 端进行整体 UI 升级，并根据客户身份使用不同主题色</li>
+                <li>封装通用组件并发布在 npm，如九宫格组件（gridview）、下拉筛选组件（selectFilter）等</li>
+                <li>参与公司内部组件（oibp-table）的维护与优化</li>
+                <li>针对 IMO 智能商品运营系统，基于 oibp-table 组件，开发“多级表头”通用逻辑</li>
               </ul>
             </li>
           </ul>
@@ -377,6 +375,15 @@
             <li>
               <a href="https://dongdong12138.github.io/canvas/index.html">canvas 画板</a>（PC端、移动端）
             </li>
+            <li>
+              <a href="https://dongdong12138.github.io/keyboard-nav/index.html">键盘导航</a>（PC端）
+            </li>
+            <li><a href="https://github.com/dongdong12138/chrome-translator">董董翻译</a>（Chrome 划词翻译插件）</li>
+            <li>
+              <a href="https://dongdong12138.github.io/snake/index.html">贪吃蛇小游戏</a>（PC端）
+            </li>
+
+
 <!--            <li>-->
 <!--              <strong>项目概述：</strong>-->
 <!--              <ul>-->
@@ -426,7 +433,7 @@
   <!--            </ul>-->
   <!--          </dd>-->
 
-  <!-- 边距合并、 负边距、 CSS兼容、
+  <!-- 、 负边距、 CSS兼容、
   浏览器渲染机制、对象拷贝、 字符串/数组/Math、
   模块模式、 AMD/CMD/UMD规范、 Require.js/R.js、 Node入门、 HTTP头/状态码/缓存处理、 Web安全、PostCSS、JQuery源码解析、 JQuery插件编写等 -->
 
@@ -534,31 +541,7 @@
   <!--            </ul>-->
   <!--          </dd>-->
 
-  <!--          <dt style="margin-top: 14px;">轻项目</dt>-->
-  <!--          <dd>-->
-  <!--            <ul>-->
-  <!--              <li>-->
-  <!--                -->
-  <!--              </li>-->
-  <!--              <li>-->
-  <!--                <a href="https://dongdong12138.github.io/keyboard-nav/index.html">键盘导航</a>（PC端）-->
-  <!--              </li>-->
-  <!--              &lt;!&ndash; <li>-->
-  <!--                <a href="https://github.com/dongdong12138/chrome-translator">董董翻译</a>（Chrome 划词翻译插件）-->
-  <!--              </li> &ndash;&gt;-->
-  <!--              <li>-->
-  <!--                <a href="https://dongdong12138.github.io/snake/index.html">贪吃蛇小游戏</a>（PC端）-->
-  <!--              </li>-->
-  <!--            </ul>-->
-  <!--          </dd>-->
-  <!--        </dl>-->
-  <!--      </section>-->
 
-  <!--      <section>-->
-  <!--        <h2>教育经历</h2>-->
-  <!--        <dl>-->
-  <!--          <dt>南昌理工学院</dt>-->
-  <!--          <dd>计算机应用专业</dd>-->
   <!--        </dl>-->
   <!--      </section>-->
 

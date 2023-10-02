@@ -1,21 +1,24 @@
 @import "common.scss";
 
 footer {
-  border: 1px solid red;
   background: #fff;
-  padding: 40px 30px;
+  padding: 30px;
 }
 
+// 工作经历
 footer > .company {
+  color: #020202;
+  flex: 1;
+  @include sectionStyle;
   .company-title {
     font-size: 16px; font-weight: bold;
     display: flex; justify-content: space-between;
   }
-  @include sectionStyle;
 }
 
+// 自学项目
 footer > .study {
-  margin-top: 40px;
+  margin-top: 30px;
   .study-title { font-size: 16px; font-weight: bold; }
   @include sectionStyle;
 }
